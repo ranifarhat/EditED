@@ -1,0 +1,53 @@
+body {
+	background-color: #1a1a1a;
+	color: white;
+	overflow-x: hidden;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	color: #1a1a1a;
+	left: 0;
+	border-spacing:0;
+	border-collapse:collapse;
+	top: 0;
+}
+
+#menu {
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+
+#Mbtn1, #Mbtn2, #Mbtn3, #Mbtn5, #Mbtn4, #Mbtn6, #Mbtn7, #Mbtn8 {
+	border-left: 2px solid #1a1a1a;
+	border-right: 2px solid #1a1a1a;
+	border-top: 2px solid #1a1a1a;
+  	background-color: white;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+#Mbtn1:hover, #Mbtn2:hover, #Mbtn3:hover, #Mbtn5:hover, #Mbtn4:hover, #Mbtn6:hover, #Mbtn7:hover, #Mbtn8:hover {
+	background-color: #1a1a1a;
+	color: white;
+	-webkit-transition: background-color 0.5s, color 0.5s;
+}
+
+#who {
+	margin-left: 1em;
+	width: 100%;
+	font-size: 2em;
+}
+
+q {
+	font-style: oblique;
+	font-size: 0.8em;
+}
+
+#us {
+	position: absolute;
+	margin-right: 1em;
+	right: 0px;
+}

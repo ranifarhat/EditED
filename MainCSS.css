@@ -1,42 +1,87 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
+	margin: 0;
 	background-color: #1a1a1a;
 	color: white;
 	overflow-x: hidden;
+	overflow-y: hidden;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .header {
-	position: absolute;
+	position: relative;
 	width: 100%;
-	background-color: white;
-	color: #1a1a1a;
+	/*background-color: white;*/
+	background-image: url(https://wallpaperplay.com/walls/full/5/8/c/210589.jpg);
+	background-size: 120em;
+	background-position: 50% 0%;
+	/*color: #1a1a1a;*/
 	left: 0;
 	border-spacing:0;
 	border-collapse:collapse;
 	top: 0;
+	z-index: 99;
+	color: white;
 }
 
-#menu {
+.nav-bar {
+	overflow: hidden;
+	position: sticky;
+	position: -webkit-sticky;
+  	position: sticky;
+  	
+	
+	top: 0em;
+	z-index: 99;
+  	width: 100%;
+	/*color: #1a1a1a;*/
+	color: white;
 	text-align: center;
 	font-size: 1.5em;
-	
+	box-shadow: 0px 0px 10px #F400FF;
+	/*background-color: #F400FF;*/
 }
 
 #Mbtn1, #Mbtn2, #Mbtn3, #Mbtn5, #Mbtn4, #Mbtn6, #Mbtn7, #Mbtn8 {
-	border-left: 2px solid #1a1a1a;
-	border-right: 2px solid #1a1a1a;
-	border-top: 2px solid #1a1a1a;
-  	background-color: white;
-	-webkit-transition: background-color 0.2s, color 0.2s;
+	/*border-left: 2px solid grey;
+	border-right: 2px solid grey;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;*/
+  	/*background-color: white;*/
+  	filter: invert(100%);
+  	background-image: url(https://wallpaperplay.com/walls/full/5/8/c/210589.jpg);
+	background-size: 100em;
+	background-position: 50% 0%;
+	background-attachment: fixed;
+	-webkit-transition: background-color 0.2s, color 0.2s, filter 0.2s;
+	z-index: 98;
 }
+
+/*#Mbtn1 {
+	border-left: 0px solid grey;
+	border-right: 2px solid grey;
+	border-top: 2px solid grey;
+}
+
+#Mbtn8 {
+	border-left: 2px solid grey;
+	border-right: 0px solid grey;
+	border-top: 2px solid grey;
+}*/
+
 #Mbtn1:hover, #Mbtn2:hover, #Mbtn3:hover, #Mbtn5:hover, #Mbtn4:hover, #Mbtn6:hover, #Mbtn7:hover, #Mbtn8:hover {
-	background-color: #1a1a1a;
+	filter: invert(0%);
 	color: white;
-	-webkit-transition: background-color 0.5s, color 0.5s;
+	-webkit-transition: background-color 0.3s, color 0.3s, filter 0.3s;
 }
 
 #who {
-	margin-left: 1em;
+	line-height: 2em;
+	margin-left: 2em;
+	height: 1.5em;
 	width: 100%;
 	font-size: 2em;
 }
@@ -50,4 +95,48 @@ q {
 	position: absolute;
 	margin-right: 1em;
 	right: 0px;
+}
+
+#logo {
+	position: absolute;
+	vertical-align: middle;
+	filter: invert(100%);
+}
+
+#bg {
+	background-image: url(https://wallpaperplay.com/walls/full/5/8/c/210589.jpg);
+	background-size: 120em;
+	background-position: 50% 0%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	border-bottom: 2px solid grey;
+}
+
+#intro {
+	position: relative;
+	font-size: 1.5em;
+	
+}
+
+.body {
+	text-align: center;
+	margin-left: 2.4em;
+	margin-right: 2.4em;
+
+}
+
+#hr1 {
+	position: relative;
+	top: 70em;
+}
+
+h1 {
+	font-size: 4em;
+	color: lightblue;
+	text-shadow: 5px 5px 10px purple;
+  	/*background: -webkit-linear-gradient(aqua, purple);
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/
 }

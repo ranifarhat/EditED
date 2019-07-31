@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="MainCSS.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='MainCSS.css') }}">
 	<title>EditED</title>
 </head>
 <body>
@@ -56,6 +56,6 @@
 	<button id="btn-aps">All Apps</button>
 </div>
 
-<script src="MainJS.js"></script>
+<script src="{{ url_for('static',filename='MainJS.js') }}"></script>
 </body>
 </html>

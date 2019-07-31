@@ -32,25 +32,16 @@ body {
 	position: sticky;
 	position: -webkit-sticky;
   	position: sticky;
-  	
-	
 	top: 0em;
 	z-index: 99;
   	width: 100%;
-	/*color: #1a1a1a;*/
 	color: white;
 	text-align: center;
 	font-size: 1.5em;
 	box-shadow: 0px 0px 10px #F400FF;
-	/*background-color: #F400FF;*/
 }
 
 #Mbtn1, #Mbtn2, #Mbtn3, #Mbtn5, #Mbtn4, #Mbtn6, #Mbtn7, #Mbtn8 {
-	/*border-left: 2px solid grey;
-	border-right: 2px solid grey;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;*/
-  	/*background-color: white;*/
   	filter: invert(100%);
   	background-image: url(https://wallpaperplay.com/walls/full/5/8/c/210589.jpg);
 	background-size: 100em;
@@ -59,18 +50,6 @@ body {
 	-webkit-transition: background-color 0.2s, color 0.2s, filter 0.2s;
 	z-index: 90;
 }
-
-/*#Mbtn1 {
-	border-left: 0px solid grey;
-	border-right: 2px solid grey;
-	border-top: 2px solid grey;
-}
-
-#Mbtn8 {
-	border-left: 2px solid grey;
-	border-right: 0px solid grey;
-	border-top: 2px solid grey;
-}*/
 
 #Mbtn1:hover, #Mbtn2:hover, #Mbtn3:hover, #Mbtn5:hover, #Mbtn4:hover, #Mbtn6:hover, #Mbtn7:hover, #Mbtn8:hover {
 	filter: invert(0%);
@@ -133,30 +112,39 @@ q {
 	top: 70em;
 }
 
+@keyframes burst {
+	0% {transform: rotate(10deg);}
+	50% {transform: rotate(-5deg);}
+	75% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
+}
+
 h1 {
+	animation-name: burst;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bezier(.26, 0, 1 ,1);
 	font-size: 4em;
 	color: lightblue;
 	text-shadow: 5px 5px 10px purple;
-  	/*background: -webkit-linear-gradient(aqua, purple);
- 	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;*/
 }
+
+/*------------------ FRONT PAGE APPS ------------------*/
 
 .appsRec {
 	/*background-color: red;*/
 	text-align: center;
 	display: inline-block;
-	width: 91%;
-	height: 26em;
-	/*height: auto;*/
+	width: 90%;
 	z-index: 4;
-	/*padding: 5em;*/
+	vertical-align: middle;
 }
 
-
-
 #box1, #box2, #box3, #box4 {
-	width: 25%;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin-left: 1em;
+	margin-right: 1em;
 	font-size: 2em;
 	background-color: rgba(0,0,0,1);
 	filter: blur(1px);
@@ -164,7 +152,8 @@ h1 {
 	background-blend-mode: luminosity;
 	border-radius: 15%;
 	box-shadow: 10px 10px 10px black;
-	-webkit-transition: background-color 0.25s, filter 0.25s, font-size 0.25s, text-shadow 0.25s, background-blend-mode 0.25s;
+	transform: scale(1);
+	-webkit-transition: background-color 0.25s, filter 0.25s, font-size 0.25s, text-shadow 0.25s, background-blend-mode 0.25s, transform 0.25s;
 }
 
 #box1 {
@@ -187,16 +176,42 @@ h1 {
 
 #box4 {
 	background-image: url(https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg);
-	background-size: 110% 110%;
+	background-size: 120% 120%;
 	background-position: 50% 50%;
 }
-
-
 
 #box1:hover, #box2:hover, #box3:hover, #box4:hover {
 	background-color: rgba(0,0,0,0);
 	filter: blur(0px);
-	font-size: 2.5em;
+	transform: scale(1.1);
 	text-shadow: 5px 5px 5px black;
-	-webkit-transition: background-color 0.25s, filter 0.25s, font-size 0.25s, text-shadow 0.25s, background-blend-mode 0.25s;
+	-webkit-transition: background-color 0.25s, filter 0.25s, font-size 0.25s, text-shadow 0.25s, background-blend-mode 0.25s, transform 0.25s;
+}
+
+/* button */
+
+#btn-aps {
+	text-decoration: none;
+	padding: 0;
+	border: none;
+	background-color: lightblue;
+	box-shadow: 0px 5px 10px purple;
+	border-radius: 10px;
+	width: 100px;
+	font-size: 1.25em;
+	height: 50px;
+	transform: scale(1);
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+}
+
+#btn-aps:active {
+	background-color: blue;
+	transform: scale(0.95);
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
+	box-shadow: 0px 0px 10px black;
+
 }
